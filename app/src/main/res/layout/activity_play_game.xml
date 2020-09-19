@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bacground"
+    tools:context=".PlayGameActivity">
+
+    <FrameLayout
+        android:background="@color/colorTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="@string/chooseNumber"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewID"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:background="@drawable/ic_one"
+                android:tag="1" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="2"
+                android:background="@drawable/ic_two" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="3"
+                android:background="@drawable/ic_three"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="4"
+                android:background="@drawable/ic_four" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="5"
+                android:background="@drawable/ic_five" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="6"
+                android:background="@drawable/ic_six" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="7"
+                android:background="@drawable/ic_seven" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="8"
+                android:background="@drawable/ic_eight" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="9"
+                android:background="@drawable/ic_nine" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton0"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:tag="0"
+               android:background="@drawable/ic_zero"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

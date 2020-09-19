@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Numbers_Game</string>
+    <string name="todo">TODO</string>
+    <string name="chooseNumber">გამოიცანი ციფრი!</string>
+    <string name="increaseOrDicrease">გაზარდე ან შეამცირე</string>
+    <string name="youWin">შენ მოიგე!!!</string>
+    <string name="ok">თავიდან დაწყება</string>
+
+</resources>
