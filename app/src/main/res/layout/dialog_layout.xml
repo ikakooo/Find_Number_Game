@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@color/colorFullTransparent"
+    android:background="@color/colorTransparent"
     android:orientation="vertical">
 
     <TextView
@@ -20,32 +20,28 @@
         android:textStyle="bold"
         android:visibility="gone" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageViewWinOrLoseID"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:contentDescription="@string/todo"
             android:scaleType="fitCenter"
             android:src="@mipmap/king" />
 
-        <Button
-            android:id="@+id/dialogOkButton"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_gravity="bottom"
-            android:background="@android:color/transparent"
-            android:text="@string/ok"
-            android:textAllCaps="false"
-            android:textColor="@color/colorGreen"
-            android:textSize="30sp"
-            android:visibility="gone" />
-    </FrameLayout>
 
-
-</LinearLayout>
+    <Button
+        android:id="@+id/dialogOkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/button"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGreen"
+        android:textSize="30sp"
+        />
+</FrameLayout>
 

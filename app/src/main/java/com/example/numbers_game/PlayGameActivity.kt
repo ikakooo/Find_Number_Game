@@ -47,13 +47,13 @@ class PlayGameActivity : AppCompatActivity() {
                 textViewID.text = "შენ მოიგე!!!"
                 numberOfTrying = 5
                 Tools.winDialog(this@PlayGameActivity,1)
-                endGame()
+                //endGame()
                 Log.d("hjedfchcre", randomNum)
             } else {
                 numberOfTrying--
                 if (numberOfTrying <= 0) {
                     Tools.winDialog(this@PlayGameActivity,0)
-                    endGame()
+                    //endGame()
                 }
                 textViewID.setTextColor(Color.RED)
                 textViewID.text = "სცადე თავიდან. დაგრჩა $numberOfTrying ცდა"
@@ -65,6 +65,7 @@ class PlayGameActivity : AppCompatActivity() {
     }
     @Suppress("DEPRECATION")
     private fun endGame() {
+        numberOfTrying = 5
         Handler().postDelayed({
             val intent = Intent(this@PlayGameActivity, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)

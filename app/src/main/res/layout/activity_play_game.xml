@@ -8,9 +8,10 @@
     tools:context=".PlayGameActivity">
 
     <FrameLayout
-        android:background="@color/colorTransparent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent" />
+
     <TextView
         android:id="@+id/textViewID"
         android:layout_width="match_parent"
@@ -18,9 +19,9 @@
         android:gravity="center"
         android:shadowColor="@color/colorPrimaryDark"
         android:text="@string/chooseNumber"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textViewID"
@@ -46,29 +47,28 @@
                 android:id="@+id/imageButton1"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_one"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:background="@drawable/ic_one"
                 android:tag="1" />
 
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_two"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="2"
-                android:background="@drawable/ic_two" />
+                android:tag="2" />
 
             <ImageButton
                 android:id="@+id/imageButton3"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_three"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="3"
-                android:background="@drawable/ic_three"
-                 />
+                android:tag="3" />
 
         </LinearLayout>
 
@@ -80,28 +80,28 @@
                 android:id="@+id/imageButton4"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_four"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="4"
-                android:background="@drawable/ic_four" />
+                android:tag="4" />
 
             <ImageButton
                 android:id="@+id/imageButton5"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_five"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="5"
-                android:background="@drawable/ic_five" />
+                android:tag="5" />
 
             <ImageButton
                 android:id="@+id/imageButton6"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_six"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="6"
-                android:background="@drawable/ic_six" />
+                android:tag="6" />
 
         </LinearLayout>
 
@@ -113,28 +113,28 @@
                 android:id="@+id/imageButton7"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_seven"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="7"
-                android:background="@drawable/ic_seven" />
+                android:tag="7" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_eight"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="8"
-                android:background="@drawable/ic_eight" />
+                android:tag="8" />
 
             <ImageButton
                 android:id="@+id/imageButton9"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_nine"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="9"
-                android:background="@drawable/ic_nine" />
+                android:tag="9" />
 
         </LinearLayout>
 
@@ -147,10 +147,10 @@
                 android:id="@+id/imageButton0"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
+                android:background="@drawable/ic_zero"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:tag="0"
-               android:background="@drawable/ic_zero"/>
+                android:tag="0" />
         </LinearLayout>
     </LinearLayout>
 
