@@ -1,15 +1,15 @@
 package com.example.numbers_game
 
 import android.annotation.SuppressLint
+import android.app.ActivityOptions
 import android.app.Dialog
 import android.content.Context
 import android.content.Intent
-import android.os.Handler
 import android.view.ViewGroup
 import android.view.Window
 import android.view.WindowManager
-import androidx.core.content.ContextCompat.startActivity
 import kotlinx.android.synthetic.main.dialog_layout.*
+
 
 object Tools {
 
@@ -33,9 +33,14 @@ object Tools {
         dialog.dialogOkButton.setOnClickListener {
             CachedData.numberOfTrying = 5
             val intent = Intent(context, MainActivity::class.java)
+            val options = ActivityOptions.makeCustomAnimation(
+                context, R.anim.diagonaltranslate,
+                R.anim.top_out
+
+            )
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
-            context.startActivity(intent)
-            //overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+            context.startActivity(intent, options.toBundle())
+           // overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
 
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">რიცხვების თამაში</string>
+    <string name="app_name">გამოიცანი ციფრი</string>
     <string name="todo">TODO</string>
     <string name="chooseNumber">გამოიცანი ციფრი!</string>
     <string name="increaseOrDicrease">გაზარდე ან შეამცირე</string>
