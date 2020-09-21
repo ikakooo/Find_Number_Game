@@ -46,8 +46,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton1"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_one"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -55,8 +55,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton2"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_two"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -64,8 +64,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_three"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -80,8 +80,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton4"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_four"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -89,8 +89,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton5"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_five"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -98,8 +98,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton6"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_six"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -114,8 +114,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton7"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_seven"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -123,8 +123,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton8"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_eight"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -132,8 +132,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton9"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_nine"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
@@ -149,8 +149,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton0"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="@dimen/numbersSize"
+                android:layout_height="@dimen/numbersSize"
                 android:background="@drawable/ic_zero"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"

@@ -13,8 +13,6 @@ import kotlinx.android.synthetic.main.dialog_layout.*
 
 object Tools {
 
-
-    @Suppress("DEPRECATION")
     @SuppressLint("SetTextI18n")
     fun winDialog(context: Context, case: Int) {
         val dialog = Dialog(context)
@@ -36,14 +34,10 @@ object Tools {
             val options = ActivityOptions.makeCustomAnimation(
                 context, R.anim.diagonaltranslate,
                 R.anim.top_out
-
             )
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent, options.toBundle())
            // overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
-
-
     }
-
 }

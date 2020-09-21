@@ -27,18 +27,6 @@ class MainActivity : AppCompatActivity() {
             textViewTryingNumberID.text = numberOfTrying.toString()
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
         startGameID.setOnClickListener {
             val intent = Intent(this, PlayGameActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
