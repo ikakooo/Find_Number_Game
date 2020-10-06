@@ -4,21 +4,23 @@ import android.annotation.SuppressLint
 import android.content.res.Resources
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
+import android.util.Log.d
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.numbers_game.CachedData.numberOfTrying
+import com.example.numbers_game.Extensions.isTriedCharacter
 import kotlinx.android.synthetic.main.activity_play_game.*
 import kotlin.random.Random
 
 
 class PlayGameActivity : AppCompatActivity() {
     private val randomNum = Random.nextInt(10).toString()
-
+    private val triedNumbers = mutableListOf<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_game)
         init()
+
     }
 
     private fun init() {
@@ -33,7 +35,7 @@ class PlayGameActivity : AppCompatActivity() {
         imageButton7.customOnClickAction()
         imageButton8.customOnClickAction()
         imageButton9.customOnClickAction()
-        Log.d("hjechcre", randomNum)
+
     }
 
 
@@ -45,15 +47,25 @@ class PlayGameActivity : AppCompatActivity() {
                 textViewID.text = "შენ მოიგე!!!"
                 numberOfTrying = 5
                 Tools.winDialog(this@PlayGameActivity, 1)
-                Log.d("hjedfchcre", randomNum)
+                d("hjedfchcre", randomNum)
             } else {
-                numberOfTrying--
+
+                if (isTriedCharacter(tag.toString(),triedNumbers)) {
+                    textViewID.text = "ეს რიცხი არ ყოფილა. დაგრჩა $numberOfTrying ცდა"
+                }else{
+                    triedNumbers.add(tag.toString())
+                    numberOfTrying--
+                    textViewID.setTextColor(Color.RED)
+                    textViewID.text = "სცადე თავიდან. დაგრჩა $numberOfTrying ცდა"}
+
                 if (numberOfTrying <= 0) {
                     Tools.winDialog(this@PlayGameActivity, 0)
+
                 }
-                textViewID.setTextColor(Color.RED)
-                textViewID.text = "სცადე თავიდან. დაგრჩა $numberOfTrying ცდა"
+
             }
+
+
         }
     }
 
@@ -63,8 +75,8 @@ class PlayGameActivity : AppCompatActivity() {
 
         val height = Resources.getSystem().displayMetrics.heightPixels
         val width =  Resources.getSystem().displayMetrics.widthPixels
-       // R.dimen.numbersSize
-        Log.d("fwefe", "$width  $height")
+
+        d("fwefe", "$width  $height")
     }
 
 }

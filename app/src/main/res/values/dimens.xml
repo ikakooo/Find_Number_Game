@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="numbersSize">150dp</dimen>
+    <dimen name="numbersSize">100dp</dimen>
     <dimen name="smallDisplayNumbersSize">90dp</dimen>
 </resources>
