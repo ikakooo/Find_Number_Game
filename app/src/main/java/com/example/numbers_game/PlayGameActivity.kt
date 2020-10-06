@@ -35,7 +35,6 @@ class PlayGameActivity : AppCompatActivity() {
         imageButton7.customOnClickAction()
         imageButton8.customOnClickAction()
         imageButton9.customOnClickAction()
-
     }
 
 
@@ -60,12 +59,8 @@ class PlayGameActivity : AppCompatActivity() {
 
                 if (numberOfTrying <= 0) {
                     Tools.winDialog(this@PlayGameActivity, 0)
-
                 }
-
             }
-
-
         }
     }
 
